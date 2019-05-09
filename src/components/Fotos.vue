@@ -1,0 +1,140 @@
+<template>
+
+  <div class="fotos">
+		<mdb-container class="mt-5">
+			 <h2 class="h1-responsive font-weight-bold text-center my-5">Fotos</h2>
+				  <hr class="my-5" />
+      <mdb-row class="mdb-lightbox">
+        <mdb-col md="4" @click.native="show(0)">
+          <figure>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(117).jpg" class="img-fluid" alt="">
+          </figure>
+        </mdb-col>
+        <mdb-col md="4" @click.native="show(1)">
+          <figure>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(98).jpg" class="img-fluid" alt="">
+          </figure>
+        </mdb-col>
+        <mdb-col md="4" @click.native="show(2)">
+          <figure>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(131).jpg" class="img-fluid" alt="">
+          </figure>
+        </mdb-col>
+        <mdb-col md="4" @click.native="show(3)">
+          <figure>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(123).jpg" class="img-fluid" alt="">
+          </figure>
+        </mdb-col>
+        <mdb-col md="4" @click.native="show(4)">
+          <figure>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(118).jpg" class="img-fluid" alt="">
+          </figure>
+        </mdb-col>
+        <mdb-col md="4" @click.native="show(5)">
+          <figure>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(128).jpg" class="img-fluid" alt="">
+          </figure>
+        </mdb-col>
+        <mdb-col md="4" @click.native="show(6)">
+          <figure>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(132).jpg" class="img-fluid" alt="">
+          </figure>
+        </mdb-col>
+        <mdb-col md="4" @click.native="show(7)">
+          <figure>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(115).jpg" class="img-fluid" alt="">
+          </figure>
+        </mdb-col>
+        <mdb-col md="4" @click.native="show(8)">
+          <figure>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(133).jpg" class="img-fluid" alt="">
+          </figure>
+        </mdb-col>
+      </mdb-row>
+    </mdb-container>
+    <mdb-lightbox
+      :visible="visible"
+      :imgs="imgs"
+      :index="index"
+      @hide="handleHide">
+    </mdb-lightbox>
+</div>
+</template>
+
+<script>
+import {
+  mdbNavbar,
+  mdbNavbarNav,
+  mdbNavItem,
+  mdbBtn,
+  mdbContainer,
+  mdbNavbarBrand,
+  mdbNavbarToggler,
+  mdbIcon,
+  mdbDropdown,
+  mdbDropdownMenu,
+  mdbDropdownToggle,
+  mdbDropdownItem,
+  mdbRow,
+  mdbCol,
+  mdbView,
+  mdbMask,
+  mdbTabs,
+  mdbCard,
+  mdbCardImage,
+  mdbCardHeader,
+  mdbCardBody,
+  mdbCardTitle,
+  mdbCardText,
+  mdbCardFooter,
+  mdbCardUp,
+  mdbCardAvatar,
+  mdbCardGroup,
+  mdbCarousel,
+  mdbCarouselItem,
+  mdbCarouselCaption
+} from 'mdbvue'
+export default {
+  name: 'Fotos',
+  components: {
+    mdbNavbar,
+    mdbNavbarNav,
+    mdbNavItem,
+    mdbBtn,
+    mdbNavbarBrand,
+    mdbNavbarToggler,
+    mdbContainer,
+    mdbIcon,
+    mdbDropdown,
+    mdbDropdownMenu,
+    mdbDropdownToggle,
+    mdbDropdownItem,
+    mdbCol,
+    mdbRow,
+    mdbView,
+    mdbMask,
+    mdbTabs,
+    mdbCard,
+    mdbCardImage,
+    mdbCardHeader,
+    mdbCardBody,
+    mdbCardTitle,
+    mdbCardText,
+    mdbCardFooter,
+    mdbCardUp,
+    mdbCardAvatar,
+	mdbCardGroup,
+	mdbCarousel,
+    mdbCarouselItem,
+    mdbCarouselCaption
+  }
+}
+</script>
+
+<style scoped>
+
+.fotos{
+    margin-top: 160px;
+    margin-bottom: 10px;
+}
+</style>
