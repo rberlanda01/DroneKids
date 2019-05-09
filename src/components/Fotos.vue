@@ -1,53 +1,115 @@
 <template>
-
   <div class="fotos">
-		<mdb-container class="mt-5">
-			 <h2 class="h1-responsive font-weight-bold text-center my-5">Fotos</h2>
-				  <hr class="my-5" />
+    <mdb-container class="mt-5">
+      <h2 class="h1-responsive font-weight-bold text-center my-5">Fotos</h2>
+      <hr class="my-5" />
       <mdb-row class="mdb-lightbox">
-        <mdb-col md="4" @click.native="show(0)">
+        <mdb-col
+          md="4"
+          @click.native="show(0)"
+        >
           <figure>
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(117).jpg" class="img-fluid" alt="">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(117).jpg"
+              class="img-fluid"
+              alt=""
+            >
           </figure>
         </mdb-col>
-        <mdb-col md="4" @click.native="show(1)">
+        <mdb-col
+          md="4"
+          @click.native="show(1)"
+        >
           <figure>
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(98).jpg" class="img-fluid" alt="">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(98).jpg"
+              class="img-fluid"
+              alt=""
+            >
           </figure>
         </mdb-col>
-        <mdb-col md="4" @click.native="show(2)">
+        <mdb-col
+          md="4"
+          @click.native="show(2)"
+        >
           <figure>
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(131).jpg" class="img-fluid" alt="">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(131).jpg"
+              class="img-fluid"
+              alt=""
+            >
           </figure>
         </mdb-col>
-        <mdb-col md="4" @click.native="show(3)">
+        <mdb-col
+          md="4"
+          @click.native="show(3)"
+        >
           <figure>
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(123).jpg" class="img-fluid" alt="">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(123).jpg"
+              class="img-fluid"
+              alt=""
+            >
           </figure>
         </mdb-col>
-        <mdb-col md="4" @click.native="show(4)">
+        <mdb-col
+          md="4"
+          @click.native="show(4)"
+        >
           <figure>
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(118).jpg" class="img-fluid" alt="">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(118).jpg"
+              class="img-fluid"
+              alt=""
+            >
           </figure>
         </mdb-col>
-        <mdb-col md="4" @click.native="show(5)">
+        <mdb-col
+          md="4"
+          @click.native="show(5)"
+        >
           <figure>
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(128).jpg" class="img-fluid" alt="">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(128).jpg"
+              class="img-fluid"
+              alt=""
+            >
           </figure>
         </mdb-col>
-        <mdb-col md="4" @click.native="show(6)">
+        <mdb-col
+          md="4"
+          @click.native="show(6)"
+        >
           <figure>
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(132).jpg" class="img-fluid" alt="">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(132).jpg"
+              class="img-fluid"
+              alt=""
+            >
           </figure>
         </mdb-col>
-        <mdb-col md="4" @click.native="show(7)">
+        <mdb-col
+          md="4"
+          @click.native="show(7)"
+        >
           <figure>
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(115).jpg" class="img-fluid" alt="">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(115).jpg"
+              class="img-fluid"
+              alt=""
+            >
           </figure>
         </mdb-col>
-        <mdb-col md="4" @click.native="show(8)">
+        <mdb-col
+          md="4"
+          @click.native="show(8)"
+        >
           <figure>
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(133).jpg" class="img-fluid" alt="">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(133).jpg"
+              class="img-fluid"
+              alt=""
+            >
           </figure>
         </mdb-col>
       </mdb-row>
@@ -56,9 +118,10 @@
       :visible="visible"
       :imgs="imgs"
       :index="index"
-      @hide="handleHide">
+      @hide="handleHide"
+    >
     </mdb-lightbox>
-</div>
+  </div>
 </template>
 
 <script>
@@ -123,8 +186,8 @@ export default {
     mdbCardFooter,
     mdbCardUp,
     mdbCardAvatar,
-	mdbCardGroup,
-	mdbCarousel,
+    mdbCardGroup,
+    mdbCarousel,
     mdbCarouselItem,
     mdbCarouselCaption
   }
@@ -132,9 +195,8 @@ export default {
 </script>
 
 <style scoped>
-
-.fotos{
-    margin-top: 160px;
-    margin-bottom: 10px;
+.fotos {
+  margin-top: 160px;
+  margin-bottom: 10px;
 }
 </style>

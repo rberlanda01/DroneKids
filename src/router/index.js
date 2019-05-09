@@ -8,7 +8,8 @@ import Fotos from '@/components/Fotos'
 import Contato from '@/components/Contato'
 import Blog from '@/components/Blog'
 import BlogPage from '@/components/BlogPage'
-
+import Aospais from '@/components/Aospais'
+import Asescolas from '@/components/Asescolas'
 
 Vue.use(Router)
 export default new Router({
@@ -22,41 +23,51 @@ export default new Router({
       path: '/about',
       name: 'About',
       component: About
-	},
+    },
     {
       path: '/Matricula',
       name: 'Matricula',
       component: Matricula
-	},
-	{
-		path: '/Cursos',
-		name: 'Cursos',
-		component: Cursos
-	  },
-	  {
-		path: '/Fotos',
-		name: 'Fotos',
-		component: Fotos
-	  },
-	  {
-		path: '/Atuando',
-		name: 'Atuando',
-		component: Fotos
-	  },
-	  {
-		path: '/Contato',
-		name: 'Contato',
-		component: Contato
-	  },
-	  {
-		path: '/Blog',
-		name: 'Blog',
-		component: Blog
-	  },
-	  {
-		path: '/BlogPage',
-		name: 'BlogPage',
-		component: BlogPage
-	  },
+    },
+    {
+      path: '/Cursos',
+      name: 'Cursos',
+      component: Cursos
+    },
+    {
+      path: '/Fotos',
+      name: 'Fotos',
+      component: Fotos
+    },
+    {
+      path: '/Atuando',
+      name: 'Atuando',
+      component: Fotos
+    },
+    {
+      path: '/Contato',
+      name: 'Contato',
+      component: Contato
+    },
+    {
+      path: '/Blog',
+      name: 'Blog',
+      component: Blog
+    },
+    {
+      path: '/BlogPage',
+      name: 'BlogPage',
+      component: BlogPage
+    },
+    {
+      path: '/Aospais',
+      name: 'Aospais',
+      component: Aospais
+    },
+    {
+      path: '/Asescolas',
+      name: 'Asescolas',
+      component: Asescolas
+    }
   ]
 })

@@ -1,39 +1,64 @@
 <template>
-  <div class="hello" style="margin-top: 115px;  margin-bottom: 15px">
-            <mdb-row class="page row hm-gradient mask flex-center" >
-        <mdb-col md="6" xs="12" class="half-page column animated fadeInLeft" style="text-align: -webkit-right; padding-top: 100px; padding-bottom: 100px;">
-          <h1 class="heading display-3" style="font-family: unset; color: #33b5e5;">Drone Kids</h1>
-          <h2 class="subheading font-weight-bold" style="margin: 0px; color: #aa66cc">Learning by Droning.</h2>
-           <img
-              class="image animated fadeInDown" style="width: 90%;"
-              src="../assets/entrada2.png"
-            >
-          <mdb-row>
-          <mdb-btn  icon="caret-right" icon-right color="secondary">Saiba Mais</mdb-btn>
-          <mdb-btn  icon="caret-right" icon-right color="info">Matricule-se</mdb-btn>
-          </mdb-row>
-        </mdb-col>
-        <mdb-col class="column" md="6" xs="12">
-          <mdb-view>
-            <img
-              class="image animated fadeInDown" style="width: 77%;"
-              src="../assets/logo.png"
-            >
-            <mdb-mask flex-center class=""/>
-          </mdb-view>
-        </mdb-col>
-      </mdb-row>
-	  <About></About>
-	 <Cursos></Cursos>
-	 <Fotos></Fotos>
-	 	<Atuando></Atuando>
-		 <Contato></Contato>
-    <ul>
-      <h1>{{ titulo }}</h1>Acesse:
-      <li>
-        <a href="https://dronekids.com.br" target="_blank">http://dronekids.com.br</a>
-      </li>
-    </ul>
+  <div
+    class="hello"
+    style="margin-top: 115px;  margin-bottom: 15px"
+  >
+    <mdb-row class="page row hm-gradient mask flex-center">
+      <mdb-col
+        md="6"
+        xs="12"
+        class="half-page column animated fadeInLeft"
+        style="text-align: -webkit-right; padding-top: 100px; padding-bottom: 100px;"
+      >
+        <h1
+          class="heading display-3"
+          style="font-family: unset; color: #33b5e5;"
+        >Drone Kids</h1>
+        <h2
+          class="subheading font-weight-bold"
+          style="margin: 0px; color: #aa66cc"
+        >Learning by Droning.</h2>
+        <img
+          class="image animated fadeInDown"
+          style="width: 90%;"
+          src="../assets/entrada2.png"
+        >
+        <mdb-row>
+          <mdb-btn
+            icon="caret-right"
+            icon-right
+            color="secondary"
+          >Saiba Mais</mdb-btn>
+          <mdb-btn
+            icon="caret-right"
+            icon-right
+            color="info"
+          >Matricule-se</mdb-btn>
+        </mdb-row>
+      </mdb-col>
+      <mdb-col
+        class="column"
+        md="6"
+        xs="12"
+      >
+        <mdb-view>
+          <img
+            class="image animated fadeInDown"
+            style="width: 77%;"
+            src="../assets/logo.png"
+          >
+          <mdb-mask
+            flex-center
+            class=""
+          />
+        </mdb-view>
+      </mdb-col>
+    </mdb-row>
+    <About></About>
+    <Cursos></Cursos>
+    <Fotos></Fotos>
+    <Atuando></Atuando>
+    <Contato></Contato>
   </div>
 </template>
 
@@ -45,24 +70,23 @@ import Atuando from '../components/Atuando'
 import Contato from '../components/Contato'
 import {
   mdbBtn,
-    mdbNavbarBrand,
-    mdbNavbarToggler,
-    mdbContainer,
-    mdbIcon,
-    mdbCol,
-    mdbRow,
-    mdbView,
-    mdbMask,
-    mdbTabs,
+  mdbNavbarBrand,
+  mdbNavbarToggler,
+  mdbContainer,
+  mdbIcon,
+  mdbCol,
+  mdbRow,
+  mdbView,
+  mdbMask
 } from 'mdbvue'
 export default {
   name: 'Home',
   components: {
-	'About': About,
-	'Cursos': Cursos,
-	'Fotos': Fotos,
-	'Atuando': Atuando,
-	'Contato': Contato,
+    'About': About,
+    'Cursos': Cursos,
+    'Fotos': Fotos,
+    'Atuando': Atuando,
+    'Contato': Contato,
     mdbBtn,
     mdbNavbarBrand,
     mdbNavbarToggler,
@@ -71,7 +95,7 @@ export default {
     mdbCol,
     mdbRow,
     mdbView,
-    mdbMask,
+    mdbMask
   },
   titulo: 'Inicio',
   subtitulo: 'AEEEE'
@@ -101,11 +125,10 @@ a {
   margin-top: 180px;
   margin-bottom: 100px;
 }
-.nav-link
-  {
-    display: block;
-    padding: .5rem 2.5rem;
-    font-size: 18px;
+.nav-link {
+  display: block;
+  padding: 0.5rem 2.5rem;
+  font-size: 18px;
 }
 
 .top-nav-collapse {
@@ -155,9 +178,10 @@ h5 {
   margin-top: 50px;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fdfdfd;
-    background-color: #0078f973;
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fdfdfd;
+  background-color: #0078f973;
 }
 .navbar:not(.top-nav-collapse) {
   background: transparent;
