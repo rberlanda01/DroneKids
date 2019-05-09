@@ -1,6 +1,6 @@
-# y
+# DKS
 
-> A Vue.js project
+> A Vue.js project + mdbvue
 
 ## Build Setup
 
